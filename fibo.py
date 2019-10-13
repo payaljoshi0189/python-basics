@@ -18,6 +18,9 @@ def fib(n):
 
 if __name__ == "__main__":
 	import sys
-	fib(int(sys.argv[1]))
+	if len(sys.argv ) < 2:
+		print("Please provide an input")
+	else:
+		fib(int(sys.argv[1]))
 
 		
